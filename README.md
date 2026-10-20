@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Resume Screener
 
 **An explainable, human-in-the-loop resume screening and ranking tool.**
@@ -51,3 +52,6 @@ python scripts/run_cli.py \
 
 # 4. Or launch the UI
 streamlit run app.py
+=======
+# resume-screener
+>>>>>>> origin/main
