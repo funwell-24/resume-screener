@@ -1,0 +1,6 @@
+Senior Python Data Engineer
+
+Required skills: Python, pandas, SQL, AWS, Docker, scikit-learn.
+Minimum 3 years of experience building data pipelines.
+
+You will design ETL pipelines and deploy ML models to production.

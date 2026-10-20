@@ -1,0 +1,18 @@
+Alice Johnson
+alice.johnson@example.com | +1 555 123 4567
+PROFESSIONAL SUMMARY
+Senior Python data engineer with 5 years of experience building
+ETL pipelines and deploying ML models in production.
+SKILLS
+Python, pandas, SQL, Docker, AWS, scikit-learn, Airflow, Spark
+EXPERIENCE
+Senior Data Engineer, Acme Corp
+Jan 2020 - Present
+- Built production ETL pipelines in Python using Airflow
+- Deployed ML models to AWS using Docker
+- Optimized SQL queries on PostgreSQL
+Data Engineer, Beta Inc
+Jun 2018 - Dec 2019
+- Developed data pipelines using Python and pandas
+EDUCATION
+BSc Computer Science, Example University, 2018

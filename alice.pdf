@@ -1,0 +1,43 @@
+python -c "
+import pymupdf
+
+doc = pymupdf.open()
+page = doc.new_page(width=612, height=792)
+
+text = '''Alice Johnson
+alice.johnson@example.com | +1 555 123 4567 | linkedin.com/in/alicej
+
+PROFESSIONAL SUMMARY
+Senior Python data engineer with 5 years of experience building
+ETL pipelines and deploying ML models in production.
+
+SKILLS
+Python, pandas, SQL, Docker, AWS, scikit-learn, Airflow, Spark,
+PostgreSQL, git, Linux
+
+EXPERIENCE
+Senior Data Engineer, Acme Corp
+Jan 2020 - Present
+- Built production ETL pipelines in Python using Airflow and Spark
+- Deployed machine learning models to AWS using Docker and Kubernetes
+- Optimized SQL queries on PostgreSQL, reducing query time by 60 percent
+
+Data Engineer, Beta Inc
+Jun 2018 - Dec 2019
+- Developed data ingestion pipelines using Python and pandas
+- Created dashboards for analytics team
+
+EDUCATION
+BSc Computer Science, Example University, 2018
+'''
+
+# Write text with line breaks preserved
+y = 50
+for line in text.split(chr(10)):
+    page.insert_text((50, y), line, fontsize=11, fontname='helv')
+    y += 16
+
+doc.save('data/resumes/alice.pdf')
+doc.close()
+print('Created data/resumes/alice.pdf')
+"

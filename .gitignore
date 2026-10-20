@@ -1,0 +1,66 @@
+# ─── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# ─── Virtual environments ─────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+*.egg
+
+# ─── Streamlit ─────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ─── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── Environment ──────────────────────────────────────────────────────
+.env
+.env.local
+*.env.backup
+
+# ─── Logs ─────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── Data (kept out of git — user populates) ──────────────────────────
+# Comments explain WHY each is ignored — so a future you knows the intent.
+data/resumes/*.pdf          # actual resume PDFs (PII — never commit!)
+data/resumes/*.PDF
+data/processed/*            # parse cache (regenerable)
+data/labeled/*.pdf          # labeled test PDFs (PII)
+data/labeled/skill_eval_results.json  # generated report
+
+# Keep directory structure but not contents
+!data/resumes/.gitkeep
+!data/processed/.gitkeep
+!data/labeled/.gitkeep
+
+# ─── OS / Editor junk ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
